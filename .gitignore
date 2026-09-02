@@ -1,5 +1,76 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
+﻿# Build results
+[Bb]in/
+[Oo]bj/
 
-/EFCoreSetup/.vs/EFCoreSetup.slnx/FileContentIndex/bfce7204-487c-4451-b88b-c3e80e50923a.vsidx
+# Visual Studio
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.history/
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+
+# Test Results
+TestResults/
+TestResults.xml
+*.trx
+
+# Logs
+*.log
+logs/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Environment / Local configuration
+.env
+.env.*
+!.env.example
+
+# ASP.NET Core
+wwwroot/lib/
+
+# User-specific ASP.NET Core settings
+appsettings.Local.json
+
+# EF Core / Local database files
+*.db
+*.db-shm
+*.db-wal
+
+# Coverage
+coverage/
+coverage.xml
+*.coverage
+*.coveragexml
+
+# Publish
+publish/
+*.publishsettings
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# Docker
+docker-compose.override.yml
+
+# Secrets
+secrets.json
